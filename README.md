@@ -1,4 +1,4 @@
-Resistor_calculator
+ HTML CSS PHP JAVASCRIPT
 ===================
 
-Sample decoder
+-Sample page use a javascript and local storage.
