@@ -1,0 +1,470 @@
+/*
+ * License:CC BY-NC-SA 3.0 PL
+ * 
+ * Author: Tomasz "Thomas Martin" Lyduch
+ * Email: mechatronik32@gmail.com
+ * Date: 24.01.2014 | v1
+*/
+
+/*-------------------- Import fonts --------------------*/
+@import url(http://fonts.googleapis.com/css?family=Nova+Square);
+
+/*-------------------- Reset style --------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------- General --------------------*/
+
+body {
+	font-family: 'Nova Square', cursive;
+	background-color: #8FCBFF;
+	padding-top: 50px;
+	margin: 0 auto;
+	color: black;
+}
+
+#main {
+	background-color: #3586CC;
+	border-radius: 20px 20px;
+	border: 2px solid white;
+	margin: 0 auto;
+	height: 500px;
+	width: 980px;		
+}
+
+#Name {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 30px;
+	margin: 0 auto;
+	padding: 10px;
+	color: Black;
+	width: 500px;	
+}
+
+#machine {
+	height: 85%;	
+}
+
+#up_btn {
+	margin: 0 auto;
+	height: 40px;
+	width: 260px;
+	
+}
+
+.btn_up {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	border: none;
+	height: 40px;
+	width: 40px;
+	float: left;	
+}
+
+#Arrow_up_1 {
+	background-image: url(./img/Arrow_up_light.png);
+	margin-right: 16px;
+}
+
+#Arrow_up_2 {
+	background-image: url(./img/Arrow_up_light.png);
+	margin-right: 7px;
+}
+
+#Arrow_up_3 {
+	background-image: url(./img/Arrow_up_light.png);	
+	margin-right: 77px;
+}
+
+#Arrow_up_4 {
+	background-image: url(./img/Arrow_up_light.png);	
+}
+
+#Arrow_up_1:hover,
+#Arrow_up_2:hover,
+#Arrow_up_3:hover,
+#Arrow_up_4:hover {
+	background-image: url(./img/Arrow_up_dark.png);
+}
+
+#background_resistor {
+	margin: 0 auto;
+	height: 130px;
+	width: 400px;		
+}
+
+#image-resistor {
+	background-image: url(./img/background.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	pointer-events: none;
+	position: relative;
+	margin: 0 auto;
+	height: 170px;
+	z-index: 1;
+	top: -48px;	
+}
+
+.brands {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	pointer-events: none;
+	position: relative;
+	margin: 0 auto;
+	height: 170px;
+	z-index: 10;
+}
+
+#brand1 {
+	background-image: url(./img/L1/L1-Black.png);
+	top: -218px;
+}
+
+#brand2 {
+	background-image: url(./img/L2/L2-Black.png);
+	top: -388px;
+}
+
+#brand3 {
+	background-image: url(./img/L3/L3-Black.png);
+	top: -558px;
+}
+
+#brand4 {
+	background-image: url(./img/L4/L4-Black.png);
+	top: -728px;
+}
+
+#down_btn {
+	margin: 0 auto;
+	height: 40px;
+	width: 260px;		
+}
+
+.btn_down {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	border: none;
+	height: 40px;
+	width: 40px;
+	float: left;
+}
+
+#Arrow_do_1 {
+	background-image: url(./img/Arrow_down_light.png);
+	margin-right: 16px;	
+}
+
+#Arrow_do_2 {
+	background-image: url(./img/Arrow_down_light.png);
+	margin-right: 7px;
+}
+
+#Arrow_do_3 {
+	background-image: url(./img/Arrow_down_light.png);	
+	margin-right: 77px;
+}
+
+#Arrow_do_4 {
+	background-image: url(./img/Arrow_down_light.png);	
+}
+
+#Arrow_do_1:hover,
+#Arrow_do_2:hover,
+#Arrow_do_3:hover,
+#Arrow_do_4:hover {
+	background-image: url(./img/Arrow_down_dark.png);
+}
+
+#output {
+	background-color: #42A8FF;
+	border: 2px solid white;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 50px;
+	margin: 0 auto;
+	padding: 30px;
+	height: 40px;
+	width: 60%;	
+}
+
+/*-------------------- Symbols --------------------*/
+
+#legend {
+	background-color: #42A8FF;
+	border-radius: 20px 20px;
+	border: 2px solid white;
+	position: fixed;
+	margin: 0 auto;
+	height: 235px;
+	width: 260px;
+	padding: 5px;
+	left: -230px;
+	top: 20%;
+	
+	transition: left 1s;
+	-moz-transition: left 1s;
+	-webkit-transition: left 1s;
+}
+
+#legend:hover {
+	left: -60px;
+}
+
+#legendname {
+	position: relative;
+	font-size: 2em;
+	left: 112px;
+	top: 33px;
+	
+	-webkit-transform: rotate(-90deg); 
+	-moz-transform: rotate(-90deg);
+}
+
+#gold {
+	background-image: url(./img/L4/L4-Gold.png);
+}
+
+#silver {
+	background-image:url(./img/L4/L4-Silver.png);
+}
+
+#none {
+	background-image:url(./img/L4/L4-None.png);
+}
+
+.iconlegends {
+	background-position-x: 82%;
+	background-position-y: 49%;
+	border-radius: 20px;
+	height: 70px;
+	width: 70px;
+}
+
+#table_leg { 
+	border-radius: 20px 20px 20px 20px; 
+	position: relative;
+	top: -20px;	
+}
+
+td {
+	padding: 25px;	
+}
+
+/*-------------------- More menu --------------------*/
+
+#more{
+	background-color: #42A8FF;
+	border: 2px solid white;
+	border-radius: 100%;
+	position: fixed;
+	height: 200px;
+	width: 200px;
+	bottom: -100px;
+	left: -100px;
+	
+	-moz-transition: height 1s, width 1s;
+	-webkit-transition: height 1s, width 1s;
+}
+
+#more:hover{
+	height: 260px;
+	width: 260px;
+}
+
+#morename{
+	font-size: 1.8em;
+	position: fixed;
+	bottom: 33px;
+	left: 4px;
+	
+	-webkit-transform: rotate(45deg); 
+	-moz-transform: rotate(45deg);
+}
+
+.point {
+	background-color: #3586CC;
+	border: 2px solid white;
+	border-radius: 100%;
+	position: relative;
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	
+	-moz-transition: height 1s, width 1s, left 1s, bottom 1s, background-color 1s ,background-image 1s;
+	-webkit-transition: height 1s, width 1s, left 1s, bottom 1s, background-color 1s ,background-image 1s;
+}
+
+#fb{
+	bottom: 5%;
+	left: 55%;
+}
+
+#gplus{
+	bottom: 9%;
+	left: 72%;
+}
+
+#help{
+	bottom: 8%;
+	left: 85%;
+}
+
+#other{
+	/* off */
+	bottom: 0%;
+	left: 0%;
+}
+
+#more:hover .point {
+	height:70px;
+	width:70px;
+}
+
+#more:hover #gplus{
+	background-image: url(./img/social/gp.png);
+	background-position-y: 2px;
+	background-position-x: 2px;
+	background-color: #dd4b39;
+	background-size: 100%;
+	bottom: 28%;
+	left: 71%;
+}
+
+#more:hover #fb{
+	background-image: url(./img/social/fb.png);
+	background-position-y: -2px;
+	background-position-x: -5px;
+	background-size: 100%;
+	bottom: 14%;
+	left: 43%;
+}
+
+#more:hover #help{
+	bottom: 28%;
+	left: 85%;
+}
+
+#helpname {
+	position: relative;
+	font-size: 0em;
+	color: #3586CC;
+	left: 10px;
+	top: 10px;
+	
+	-moz-transition: left 1s, top 1s, font-size 1s, color 2s;
+	-webkit-transition: left 1s, top 1s, font-size 1s, color 2s;
+}
+
+#more:hover #helpname {
+	font-size: 1.7em;
+	color: black;
+	left: 12px;
+	top: 20px;
+}
+
+/*-------------------- Language --------------------*/
+
+#language {
+	display: inline;
+	position: fixed;
+	height: 28px;
+	width: 120px;
+	right: 8px;
+	top: 8px;
+}
+
+.flag {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	height: 20px;
+	width: 32px;
+	float: left;
+	margin: 2px;
+}
+
+.select_flag {
+	border: 2px solid rgb(255, 244, 113);
+}
+
+.none_select_flag {
+	border: 2px solid transparent;
+}
+
+#gb {
+	background-image: url(./img/flag/GB.png);
+}
+
+#germany {
+	background-image: url(./img/flag/Germany.png);
+}
+
+#poland {
+	background-image: url(./img/flag/Poland.png);
+}
+
+/*-------------------- Footer --------------------*/
+
+footer {
+	font-size: 11px;
+	position: fixed;
+	margin: 0 auto;
+	width: 500px;
+	left: 460px;
+	bottom: 0px;
+}
+
+/*  Author: Tomasz "Thomas Martin" Lyduch  */

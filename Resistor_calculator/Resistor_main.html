@@ -1,0 +1,84 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Resistor Color Decoder Calculator</title>
+	<link rel="stylesheet" type="text/css" href="Resistor_style.css">
+	<meta name="author" content="Tomasz 'Thomas Martin' Lyduch">
+	<!-- Date: 24.01.2014 | v1 -->
+	<script language="javascript">
+		// Script alert when you try open context menu.
+		if (document.addEventListener){			
+			document.addEventListener('contextmenu', function(e){
+				alert(Menu_j);
+				//e.preventDefault(); // Permanent block mneu.
+			}, false);
+		}
+
+		function help(){
+			alert(help_txt);
+		}
+	
+	</script>
+</head>
+	<body>
+		<div id="main">
+			<div id="Name">Resistor Color Decoder</div>
+			</br>
+				<div id="machine">
+					<div id="up_btn">
+						<button type="button" id="Arrow_UP_1" class="btn_up" onclick="changel1(1)"></button>
+						<button type="button" id="Arrow_UP_2" class="btn_up" onclick="changel2(1)"></button>
+						<button type="button" id="Arrow_UP_3" class="btn_up" onclick="changel3(1)"></button>
+						<button type="button" id="Arrow_UP_4" class="btn_up" onclick="changel4(1)"></button>
+					</div>
+					<div id="background_resistor">
+						<div id="image-resistor"></div>
+						<div id="brand1" class="brands" value="0"></div>
+						<div id="brand2" class="brands" value="0"></div>
+						<div id="brand3" class="brands" value="0"></div>
+						<div id="brand4" class="brands" value="0"></div>
+					</div>
+					<div id="down_btn">
+						<button type="button" id="Arrow_DO_1" class="btn_down" onclick="changel1(2)"></button>
+						<button type="button" id="Arrow_DO_2" class="btn_down" onclick="changel2(2)"></button>
+						<button type="button" id="Arrow_DO_3" class="btn_down" onclick="changel3(2)"></button>
+						<button type="button" id="Arrow_DO_4" class="btn_down" onclick="changel4(2)"></button>
+					</div>
+					</br></br></br>
+					<div id="output" class="out">Choose a color</div>
+				</div>
+			</div>
+		</div>
+		<div id="legend">
+			<div id="legendname">Symbols</div>
+			<table id="table_leg">
+				<tr>
+					<td id="gold" class="iconlegends"></td><td id="gold_n">Gold</td>
+				</tr>
+				<tr>
+					<td id="silver" class="iconlegends"></td><td id="silver_n">Silver</td>
+				</tr>
+				<tr>
+					<td id="none" class="iconlegends"></td><td id="none_n">None</td>
+				</tr>
+			</table>
+		</div>
+		<div id="more">
+			<div id="morename">More!</div>
+			<div id="fb" class="point" onclick="window.location='https://www.facebook.com/mechatronik32'";></div>
+			<div id="gplus" class="point" onclick="window.location='https://plus.google.com/u/0/104865566843052817627/about'"></div>
+			<div id="help" class="point" onclick="help()"><div id="helpname">Help</div></div>
+			<div id="other" class="point"></div>
+		</div>
+		<div id="language">
+			<div id="gb" class="flag select_flag" onclick="language('gb')"></div>
+			<div id="germany" class="flag none_select_flag" onclick="language('de')"></div>
+			<div id="poland" class="flag none_select_flag" onclick="language('pl')"></div>
+		</div>
+		<footer id="footer">
+			Copyright &copy 2014 Tomasz "Thomas Martin" Łyduch, All Rights Reserved.
+		</footer>
+		<script type="text/javascript" src="js/Language_select.js"></script>
+		<script type="text/javascript" src="js/Resistor_calculator.js"></script>
+	</body>
+</html>
